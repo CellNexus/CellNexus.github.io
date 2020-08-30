@@ -188,7 +188,8 @@
 
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="https://formspree.io/xnqgkban" method="post" role="form" class="contactForm">
+
+          <form action="https://formspree.io/xnqgkban" method="POST" role="form" class="contactForm">
             <div class="row">
               <div class="span4 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -207,12 +208,13 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please use right pane email address or Contact us to send email to us." placeholder="Message"></textarea>
                 <div class="validation"></div>
                 <div class="text-center">
-                  <!-- <button class="btn btn-color btn-rounded" type="submit">Message, Please send email</button> -->
-		 <button class="btn btn-color btn-rounded" type="submit">Submit</button>
+                  <button class="btn btn-color btn-rounded" type="submit">Submit</button>
                 </div>
               </div>
             </div>
           </form>
+
+
         </div>
       </div>
     </div>
@@ -265,12 +267,13 @@
             <p>
               Enter your email to subcribe newsletter
             </p>
-            <form>
+            <form action="https://formspree.io/xnqgkban" method="POST" name="subscribeform">
               <div class="input-append">
-                <input class="span2" id="appendedInputButton" type="text">
+                <input class="span2" id="appendedInputButton" type="text" name="_replyto">
                 <button class="btn btn-color" type="submit">Subscribe</button>
               </div>
             </form>
+
             <ul class="social-network">
 	      <li><a href="https://twitter.com/ForParkinsons1" title="Twitter"><i class="icon-bg-light icon-twitter icon-circled icon-1x"></i></a></li>
               <!--<li><a href="#"><i class="icon-bg-light icon-facebook icon-circled icon-1x"></i></a></li>

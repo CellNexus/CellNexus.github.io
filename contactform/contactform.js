@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  "use strict";
+  "use unstrict";
 
   //Contact
   $('form.contactForm').submit(function() {
@@ -99,18 +99,26 @@ jQuery(document).ready(function($) {
       url: action,
       data: str,
       success: function(msg) {
-        // alert(msg);
+        alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
+          
         } else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg);
         }
-
-      }
+        
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) { 
+        //alert("Thanks for your contact with us, will response soon");
+        $("#sendmessage").addClass("show");
+        $("#errormessage").removeClass("show");
+        $('.contactForm').find("input, textarea").val("");
+        //$('.subscribeform').find("input, textarea").val("");
+    }
     });
     return false;
   });
