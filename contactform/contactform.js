@@ -114,6 +114,7 @@ jQuery(document).ready(function($) {
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) { 
         //alert("Thanks for your contact with us, will response soon");
+        //temporary for contact form usage. need to handle exception
         $("#sendmessage").addClass("show");
         $("#errormessage").removeClass("show");
         $('.contactForm').find("input, textarea").val("");
