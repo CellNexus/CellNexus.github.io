@@ -325,7 +325,43 @@ section#subintro {
 }
 
 
-
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+	background: linear-gradient(rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.8)), url("../img/actionFeatureImg.png") fixed center center;
+	background-size: cover;
+	padding: 60px 0;
+  }
+  
+  .cta h3 {
+	color: #fff;
+	font-size: 28px;
+	font-weight: 700;
+  }
+  
+  .cta p {
+	color: #fff;
+  }
+  
+  .cta .cta-btn {
+	font-family: "Raleway", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 8px 28px;
+	border-radius: 5px;
+	transition: 0.3s;
+	margin-top: 10px;
+	border: 2px solid #fff;
+	color: #fff;
+  }
+  
+  .cta .cta-btn:hover {
+	background: #4eb478;
+	border: 2px solid #4eb478;
+  }
 /* cta box */
 .cta-box {
 	background:#eee;
@@ -368,6 +404,48 @@ section#subintro {
 	max-width:100%;
 	height:auto;
 }
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services {
+	padding-bottom: 30px;
+  }
+  
+  .services .icon-box {
+	margin-bottom: 20px;
+	padding: 30px 15px;
+	border-radius: 6px;
+	background: #fff;
+  }
+  
+  .services .icon-box i {
+	float: left;
+	color: #4eb478;
+	font-size: 40px;
+  }
+  
+  .services .icon-box h4 {
+	margin-left: 70px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	font-size: 18px;
+  }
+  
+  .services .icon-box h4 a {
+	color: #444444;
+	transition: 0.3s;
+  }
+  
+  .services .icon-box .icon-box:hover h4 a {
+	color: #4eb478;
+  }
+  
+  .services .icon-box p {
+	margin-left: 70px;
+	line-height: 24px;
+	font-size: 14px;
+  }
 
 /* portfolio */
 
@@ -2040,6 +2118,63 @@ img.max-img {
 
 /* Sections
 -------------------------------------------------- */
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+	padding: 60px 0;
+	overflow: hidden;
+  }
+  
+  .section-bg {
+	background-color: #fafdfb;
+  }
+  
+  .section-title {
+	text-align: center;
+	padding: 30px 0;
+	position: relative;
+  }
+  
+  .section-title h2 {
+	font-size: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	color: #4eb478;
+	position: relative;
+	z-index: 2;
+  }
+  
+  .section-title span {
+	position: absolute;
+	top: 30px;
+	color: #f4f4f4;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	font-weight: 700;
+	font-size: 52px;
+	text-transform: uppercase;
+	line-height: 0;
+  }
+  
+  .section-title p {
+	margin-bottom: 0;
+	position: relative;
+	z-index: 2;
+  }
+  
+  @media (max-width: 575px) {
+	.section-title h2 {
+	  font-size: 28px;
+	  margin-bottom: 15px;
+	}
+	.section-title span {
+	  font-size: 38px;
+	}
+  }
 
 /* padding for in-page bookmarks and fixed navbar */
 section.doc {
